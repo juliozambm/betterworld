@@ -575,3 +575,13 @@ footer .right ul li {
     width: 50%;
   }
 }
+
+@media (max-width: 750px) {
+  footer {
+    flex-direction: column;
+  }
+
+  footer div {
+    flex-direction: column;
+  }
+}
