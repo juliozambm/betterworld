@@ -573,6 +573,10 @@ footer .right ul li {
   .about-us .img-container {
     width: 100%;
   }
+
+  .donate {
+    padding: 96px 64px 0px 64px;
+  }
 }
 
 @media (max-width: 750px) {
@@ -594,5 +598,19 @@ footer .right ul li {
 
   .about-us {
     flex-direction: column;
+  }
+
+  .donate {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .donate div {
+    align-items: center;
+    margin-bottom: 64px;
+  }
+
+  .donate .form-container {
+    width: 90%;
   }
 }
