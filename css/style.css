@@ -127,8 +127,8 @@ header {
 }
 
 header img {
-  width: 40%;
-  height: 55%;
+  width: 32vw;
+  height: 25vw;
   transition: all 0.1s ease-in;
 }
 
@@ -393,7 +393,8 @@ h3 {
 }
 
 .donate div {
-  width: 525px;
+  width: 100%;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
 }
@@ -539,6 +540,23 @@ footer .right ul li {
 }
 
 @media (max-width: 1120px) {
+  .header-details h1 {
+    font-size: 32px;
+    max-width: 300px;
+  }
+
+  .header-details h2 {
+    font-size: 16px;
+    max-width: 300px;
+    margin-top: 20px;
+  }
+
+  .header-details button {
+    margin-top: 28px;
+    padding: 12px 24px;
+    font-size: 12px;
+  }
+
   .sponsors {
     width: 75%;
   }
@@ -577,9 +595,27 @@ footer .right ul li {
   .donate {
     padding: 96px 64px 0px 64px;
   }
+
+  .donate p {
+    max-width: 90%;
+  }
 }
 
 @media (max-width: 750px) {
+  header img {
+    width: 0;
+    height: 0;
+    position: absolute;
+  }
+
+  .header-details h1 {
+    max-width: 100%;
+  }
+
+  .header-details h2 {
+    max-width: 100%;
+  }
+
   .services-details-info h1 {
     font-size: 16px;
   }
@@ -606,8 +642,13 @@ footer .right ul li {
   }
 
   .donate div {
-    align-items: center;
     margin-bottom: 64px;
+    align-items: center;
+  }
+
+  .donate p {
+    text-align: justify;
+    max-width: 100%;
   }
 
   .donate .form-container {
