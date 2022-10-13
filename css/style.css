@@ -674,4 +674,14 @@ footer .right ul li {
   .donate .form-container {
     width: 100%;
   }
+
+  .about-us .img-container {
+    width: 80%;
+    height: 300px;
+  }
+
+  .about-us .aside-img {
+    height: 300px;
+    margin-top: -12px;
+  }
 }
