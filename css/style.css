@@ -616,6 +616,20 @@ footer .right ul li {
     max-width: 100%;
   }
 
+  .sponsors {
+    width: 90%;
+    margin-top: -8vh;
+  }
+
+  .sponsors-container {
+    padding: 24px 24px;
+  }
+
+  .sponsors-container img {
+    height: 48px;
+    width: auto;
+  }
+
   .services-details-info h1 {
     font-size: 16px;
   }
