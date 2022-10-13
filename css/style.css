@@ -53,10 +53,60 @@ nav a {
   color: #fff;
   font-family: "montserrat", "sans-serif";
   font-weight: 700;
+  letter-spacing: 2px;
 }
 
 nav a:hover {
   border-bottom: 2px solid #fff;
+}
+
+/* Mobile menu styles */
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: white;
+  margin: 8px;
+}
+
+@media (max-width: 840px) {
+  .mobile-menu {
+    display: block;
+  }
+
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 75vw;
+    height: 100vh;
+    flex-direction: column;
+    background: white;
+    padding: 0;
+    padding-top: 32px;
+    gap: 16px;
+    margin: 0;
+    align-items: center;
+    transform: translateX(100%);
+    transition: all 0.3s ease-in;
+  }
+
+  nav a:hover {
+    border: 0;
+  }
+
+  nav li {
+    color: #36aa2c;
+  }
+
+  nav .active {
+    transform: translateX(0);
+  }
 }
 
 /* Adding padding to all the main content */
