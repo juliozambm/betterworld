@@ -680,6 +680,7 @@ footer .top ul li {
 
   footer .options-container {
     display: flex;
+    justify-content: space-between;
     margin-top: 24px;
   }
   footer .top ul li {
@@ -687,7 +688,6 @@ footer .top ul li {
   }
 
   footer .bottom {
-    flex-direction: column;
     margin-top: 36px;
   }
 
@@ -716,5 +716,9 @@ footer .top ul li {
   h2,
   h3 {
     text-align: justify;
+  }
+
+  footer .bottom {
+    flex-direction: column;
   }
 }
