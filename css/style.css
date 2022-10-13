@@ -93,6 +93,7 @@ nav a:hover {
     margin: 0;
     align-items: center;
     transform: translateX(100%);
+    opacity: 0;
     transition: all 0.3s ease-in;
   }
 
@@ -106,6 +107,11 @@ nav a:hover {
 
   nav .active {
     transform: translateX(0);
+    opacity: 1;
+  }
+
+  nav h1 {
+    font-size: 32px;
   }
 }
 
@@ -657,6 +663,10 @@ footer .top ul li {
 }
 
 @media (max-width: 750px) {
+  nav h1 {
+    font-size: 24px;
+  }
+
   header img {
     width: 0;
     height: 0;

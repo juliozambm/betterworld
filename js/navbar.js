@@ -13,6 +13,7 @@ class NavBar {
 
   addClickEvent() {
     this.mobileMenu.addEventListener("click", this.handleClick);
+    this.navList.addEventListener("click", this.handleClick);
   }
 
   init() {
@@ -23,5 +24,5 @@ class NavBar {
   }
 }
 
-const navbarBehavior = new NavBar("nav", "nav ul", "nav ul li");
+const navbarBehavior = new NavBar(".mobile-menu", "nav ul", "nav ul li");
 navbarBehavior.init();
