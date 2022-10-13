@@ -292,8 +292,8 @@ header img:hover {
 .about-us {
   width: 100%;
   display: flex;
-  height: 100vh;
   margin-top: 72px;
+  padding-top: 96px;
   align-items: center;
   justify-content: center;
   background-color: #36aa2c;
@@ -305,7 +305,7 @@ header img:hover {
     rgba(255, 255, 255, 0.3) 0%,
     rgba(255, 255, 255, 0) 100%
   );
-  height: 58.5vh;
+  height: 500px;
   width: 28%;
   max-width: 400px;
   box-shadow: 0px 15px 44px 10px rgba(0, 0, 0, 0.2);
@@ -313,7 +313,7 @@ header img:hover {
 }
 
 .about-us .aside-img {
-  height: 60vh;
+  height: 500px;
   width: 100%;
   margin-top: -24px;
   margin-left: -12px;
@@ -350,8 +350,8 @@ header img:hover {
 .about-us-content {
   max-width: 650px;
   padding-left: 32px;
-  height: 60vh;
   display: flex;
+  gap: 32px;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -389,7 +389,7 @@ h3 {
   background-color: #36aa2c;
   display: flex;
   justify-content: center;
-  padding: 96px 0px 12px 0px;
+  padding: 150px 0px 12px 0px;
 }
 
 .donate div {
@@ -563,7 +563,6 @@ footer .right ul li {
 
   .about-us {
     flex-direction: column;
-    height: 175vh;
   }
 
   .about-us-content {
@@ -572,16 +571,28 @@ footer .right ul li {
   }
 
   .about-us .img-container {
-    width: 50%;
+    width: 100%;
   }
 }
 
 @media (max-width: 750px) {
+  .services-details-info h1 {
+    font-size: 16px;
+  }
+
+  .services-details-info p {
+    font-size: 12px;
+  }
+
   footer {
     flex-direction: column;
   }
 
   footer div {
+    flex-direction: column;
+  }
+
+  .about-us {
     flex-direction: column;
   }
 }
