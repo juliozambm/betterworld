@@ -549,6 +549,11 @@ footer img {
   width: 56px;
   height: 56px;
   margin-right: 12px;
+  transition: all 0.1s ease-in;
+}
+
+footer img:hover {
+  transform: scale(1.05);
 }
 
 footer .bottom {
