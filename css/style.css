@@ -349,7 +349,7 @@ header img:hover {
 
 .about-us-content {
   max-width: 650px;
-  padding-left: 32px;
+  padding: 0 32px;
   display: flex;
   gap: 32px;
   flex-direction: column;
@@ -483,24 +483,27 @@ textarea:focus {
 footer {
   height: 35vh;
   background-color: white;
-  display: flex;
-  justify-content: space-between;
   padding: 48px 10vw;
+  display: flex;
+  flex-direction: column;
 }
 
 footer img {
   width: 56px;
+  height: 56px;
   margin-right: 12px;
 }
 
-footer .left {
-  height: 100%;
+footer .bottom {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 
-footer .left h2 {
+footer .top {
+  height: 100%;
+}
+
+footer .bottom h2 {
   color: #000;
   font-size: 16px;
 }
@@ -510,33 +513,34 @@ footer ul {
   flex-direction: column;
 }
 
-footer .right {
+footer .top {
   display: flex;
   justify-content: space-between;
   height: 100%;
-  flex-direction: column;
 }
 
-footer .right div {
+footer .top div {
   display: flex;
 }
 
-footer .right h2 {
+footer .top h2 {
   color: #000;
   font-size: 16px;
   align-self: flex-end;
 }
 
-footer .right ul {
+footer .top ul {
   gap: 16px;
+  padding-left: 0;
 }
 
-footer .right ul li {
+footer .top ul li {
   font-size: 16px;
   font-family: "montserrat", sans-serif;
   font-weight: 500;
   color: #000;
   opacity: 0.7;
+  margin-right: 16px;
 }
 
 @media (max-width: 1120px) {
@@ -638,14 +642,6 @@ footer .right ul li {
     font-size: 12px;
   }
 
-  footer {
-    flex-direction: column;
-  }
-
-  footer div {
-    flex-direction: column;
-  }
-
   .about-us {
     flex-direction: column;
   }
@@ -668,6 +664,37 @@ footer .right ul li {
   .donate .form-container {
     width: 90%;
   }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer .top {
+    flex-direction: column;
+  }
+
+  footer .icons-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer .options-container {
+    display: flex;
+    margin-top: 24px;
+  }
+  footer .top ul li {
+    font-size: 12px;
+  }
+
+  footer .bottom {
+    flex-direction: column;
+    margin-top: 36px;
+  }
+
+  footer .bottom h2 {
+    font-size: 10px;
+    margin-bottom: 12px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -677,11 +704,17 @@ footer .right ul li {
 
   .about-us .img-container {
     width: 80%;
-    height: 300px;
+    height: 350px;
   }
 
   .about-us .aside-img {
-    height: 300px;
+    height: 350px;
     margin-top: -12px;
+  }
+
+  .about-us-content h1,
+  h2,
+  h3 {
+    text-align: justify;
   }
 }
