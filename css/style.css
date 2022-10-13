@@ -593,7 +593,7 @@ footer .right ul li {
   }
 
   .donate {
-    padding: 96px 64px 0px 64px;
+    padding: 96px 24px 0px 24px;
   }
 
   .donate p {
@@ -667,5 +667,11 @@ footer .right ul li {
 
   .donate .form-container {
     width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .donate .form-container {
+    width: 100%;
   }
 }
